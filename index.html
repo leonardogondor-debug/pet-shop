@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Pet&Style</title>
 </head>
+
 <body>
-    
+    <header class="bg-black">
+        <div class="lg:grid lg:grid-cols-[1fr_2fr] gap-6">
+            <!--logo-->
+            <img class="w-full h-auto" src="img/logo.png" alt="logo da pet&style">
+
+            <!--menu-->
+            <nav class="bg-black border-b">
+                <div class="max-w-7xl mx-auto px-4 flex items-center h-16">
+
+                    <!--botao hamburger-->
+                    <button id="menu-btn" class="border border-white p-2 lg:hidden flex flex-col gap-1.5">
+                        <span class="block w-6 h-0.5 bg-white"></span>
+                        <span class="block w-6 h-0.5 bg-white"></span>
+                        <span class="block w-6 h-0.5 bg-white"></span>
+                    </button>
+
+                    <!--menu desktop-->
+                    <ul class="hidden lg:flex lg:ml-auto gap-6 text-lg">
+                        <li><a href="#casa" class="text-white hover:text-yellow-200">Casa</a></li>
+                        <li><a href="#produtos" class="text-white hover:text-yellow-200">Produtos</a></li>
+                        <li><a href="#depoimentos" class="text-white hover:text-yellow-200">Depoimentos</a></li>
+                        <li><a href="#contatos" class="text-white hover:text-yellow-200">Contatos</a></li>
+                    </ul>
+                </div>
+
+                <!--menu mobile-->
+                <ul id="mobile-menu" class="hidden flex-col gap-4 px-4 pb-4 text-lg lg:hidden">
+                    <li><a href="#casa" class="text-white hover:text-yellow-200">Casa</a></li>
+                    <li><a href="#produtos" class="text-white hover:text-yellow-200">Produtos</a></li>
+                    <li><a href="#depoimentos" class="text-white hover:text-yellow-200">Depoimentos</a></li>
+                    <li><a href="#contatos" class="text-white hover:text-yellow-200">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
