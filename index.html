@@ -1,16 +1,16 @@
-<!DOCTYPE html>href="styles.css">
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+    <link rel="stylesheet" href="css/styles.css">
     <title>Pet&Style</title>
 </head>
 
-<body>
+<body class="font-serif">
     <header class="bg-black">
         <div class="lg:grid lg:grid-cols-[1fr_2fr] gap-6">
             <!--logo-->
@@ -47,10 +47,32 @@
         </div>
     </header>
 
-    <section id="casa" class="bg-casa bg-cover bg-center bg-no-repeat bg-fixed">
-    
+    <section id="casa" class="bg-casa bg-cover bg-center bg-no-repeat w-full h-100 md:h-150">
+        <div class="flex-col text-center">
+            <h1 class="pt-4 text-4xl">Aqui, seu pet é parte da família.</h1>
+            <p class="text-xl md:text-2xl">Cuidamos com amor, estilo e dedicação em cada detalhe.</p>
+        </div>
     </section>
 
+    <section id="produtos">
+        <div class="lg:grid lg:grid-cols-4fr m-4">
+            <div class="p-4 bg-black text-white mb-2">
+                <img class="w-full h-auto" src="img/produto-bandana-pet.jpg" alt="produto-bandana">
+                <h1 class="text-center text-xl mt-2">Bandana FashionPet</h1>
+                <p><strong>Descrição: </strong>Bandana dupla face com estampas exclusivas e tecido leve.</p>
+                 <p><strong>Diferenciais: </strong>Fácil de colocar, não incomoda o pet e adiciona charme instantâneo.</p>
+                  <p><strong>Coleção: </strong>“Street Paw” — inspirada em tendências humanas adaptadas para pets.</p>
+            </div>
+            <div class="p-4 bg-black text-white mb-2">
+                <img class="w-full h-auto" src="img/produto-cama-pet.jpg" alt="produto-cama">
+                <h1 class="text-center text-xl mt-2">Caminha Lux Pet</h1>
+                <p><strong>Descrição: </strong>Caminha acolchoada com design moderno e tecido premium antialérgico.</p>
+                 <p><strong>Diferenciais: </strong>Base antiderrapante, capa removível e lavável, disponível em tons neutros e sofisticados.</p>
+                  <p><strong>Ideal para: </strong>Pets que amam conforto e donos que valorizam estética.</p>
+            </div>
+        </div>
+    </section>
+    0
 
     <script src="script.js"></script>
 </body>
