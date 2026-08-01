@@ -67,6 +67,8 @@
                 <p><strong>Diferenciais: </strong>Fácil de colocar, não incomoda o pet e adiciona charme instantâneo.
                 </p>
                 <p><strong>Coleção: </strong>“Street Paw” — inspirada em tendências humanas adaptadas para pets.</p>
+                <button type="submit"
+                    class="rounded-xl bg-green-400 hover:bg-green-700 text-black w-full p-2 mt-2 xl:mt-14 lg:w-25">R$ 49,90</button>
             </div>
             <div
                 class="p-4 bg-black border-5 border-yellow-400 rounded-xl text-white shadow-[0_10px_30px_rgba(0,0,0,0.9)] m-4">
@@ -76,6 +78,8 @@
                 <p><strong>Diferenciais: </strong>Base antiderrapante, capa removível e lavável, disponível em tons
                     neutros e sofisticados.</p>
                 <p><strong>Ideal para: </strong>Pets que amam conforto e donos que valorizam estética.</p>
+                <button type="submit"
+                    class="rounded-xl bg-green-400 hover:bg-green-700 text-black w-full p-2 mt-2 lg:mt-8 lg:w-25">R$ 199,90</button>
             </div>
             <div
                 class="p-4 bg-black border-5 border-yellow-400 rounded-xl text-white shadow-[0_10px_30px_rgba(0,0,0,0.9)] m-4">
@@ -85,6 +89,8 @@
                 <p><strong>Diferenciais: </strong>Promove diversão e bem-estar, estimula o exercício e combina com
                     qualquer ambiente.</p>
                 <p><strong>Cores: </strong>Dourado, rosé e preto fosco.</p>
+                <button type="submit"
+                    class="rounded-xl bg-green-400 hover:bg-green-700 text-black w-full p-2 mt-2 lg:mt-14 xl:mt-15 lg:w-25">R$ 19,90</button>
             </div>
             <div
                 class="p-4 bg-black border-5 border-yellow-400 rounded-xl text-white shadow-[0_10px_30px_rgba(0,0,0,0.9)] m-4">
@@ -94,11 +100,13 @@
                     personalizado.</p>
                 <p><strong>Diferenciais: </strong>Ajustável, confortável e com fecho de segurança reforçado.</p>
                 <p><strong>Estilo: </strong>Elegância urbana para passeios com personalidade.</p>
+                <button type="submit"
+                    class="rounded-xl bg-green-400 hover:bg-green-700 text-black w-full p-2 mt-2 lg:mt-8 xl:mt-21 lg:w-25">R$ 129,90</button>
             </div>
         </div>
     </section>
 
-    <section id="depoimentos" class="text-center w-full h-100 md:h-150 ">
+    <section id="depoimentos" class="text-center w-full">
         <h1 class="mt-6 text-4xl">Depoimentos</h1>
 
         <!--carousel-->
@@ -121,28 +129,38 @@
         </div>
     </section>
 
-    <section id="contatos" class="text-center">
+    <section id="contatos" class="text-center mt-5">
         <h1 class="text-4xl">Contatos</h1>
+        <div class="flex justify-center">
+            <form action="/enviar" method="post" class="bg-black border-5 border-yellow-400 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,10)]  w-200 m-4">
 
-        <form action="/enviar" method="post" class="bg-black border-5 border-yellow-400 rounded-xl m-4">
-            
-        
-                    <div class="grid grid-cols-1">
-                        <label for="nome" class="text-white mt-2">Diga seu nome:</label>
-                        <input type="text" id="nome" name="nome" class="bg-white border-5 border-yellow-400 rounded-xl m-2"
-                            required>
 
-                        <label for="email" class="text-white">Diga seu email:</label>
-                        <input type="email" id="email" name="email" class="bg-white border-5 border-yellow-400 rounded-xl m-2"
-                            required>
+                <div class="grid grid-cols-1">
+                    <label for="nome" class="text-white mt-2">Diga seu nome:</label>
+                    <input type="text" id="nome" name="nome"
+                        class="bg-white border-5 border-yellow-400 rounded-xl mr-8 ml-8 mt-2" required>
 
-                        <label for="mensagem" class="text-white">Digite sua mensagem:</label>
-                        <textarea maxlength="200" id="mensagem" name="mensagem"
-                            class="bg-white border-5 border-yellow-400 rounded-xl m-2" required></textarea>
-                        <button type="submit" class="bg-yellow-400 text-black m-5 w-25 h-10">Enviar</button>
-                    </div>
-        </form>
+                    <label for="email" class="text-white mt-2">Diga seu email:</label>
+                    <input type="email" id="email" name="email"
+                        class="bg-white border-5 border-yellow-400 rounded-xl  mr-8 ml-8 m-2" required>
 
+                    <label for="mensagem" class="text-white">Digite sua mensagem:</label>
+                    <textarea maxlength="200" id="mensagem" name="mensagem"
+                        class="bg-white border-5 border-yellow-400 rounded-xl mr-8 ml-8 m-2" required></textarea>
+                    <button type="submit"
+                        class="bg-yellow-400 hover:bg-yellow-700 text-black rounded-xl p-2 mr-8 ml-8 mt-2 mb-5 lg:mr-50 lg:ml-50 lg:h-10">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="bg-black text-white shadow-[0_10px_30px_rgba(0,0,0,10)] p-5 mt-2">
+            <p><strong>Telefone: </strong>(51) 99834‑2279</p>
+            <p><strong>Email: </strong>contato.petstyle.ficticio@gmail.com</p>
+            <p><strong>Endereço: </strong>Rua das Acácias, 1287
+                Bairro Jardim Aurora
+                Torres – RS
+                CEP: 95560‑000</p>
+        </div>
     </section>
 
 
