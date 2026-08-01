@@ -47,32 +47,104 @@
         </div>
     </header>
 
-    <section id="casa" class="bg-casa bg-cover bg-center bg-no-repeat w-full h-100 md:h-150">
+    <section id="casa"
+        class="bg-casa bg-cover bg-center bg-no-repeat w-full h-100 md:h-150 shadow-[0_10px_30px_rgba(0,0,0,0.9)]">
         <div class="flex-col text-center">
             <h1 class="pt-4 text-4xl">Aqui, seu pet é parte da família.</h1>
             <p class="text-xl md:text-2xl">Cuidamos com amor, estilo e dedicação em cada detalhe.</p>
         </div>
     </section>
 
-    <section id="produtos">
-        <div class="lg:grid lg:grid-cols-4fr m-4">
-            <div class="p-4 bg-black text-white mb-2">
+    <section id="produtos" class="text-center">
+        <h1 class="mt-6 text-4xl">Produtos</h1>
+
+        <div class="lg:grid lg:grid-cols-4 m-4">
+            <div
+                class="p-4 bg-black border-5 border-yellow-400 rounded-xl text-white shadow-[0_10px_30px_rgba(0,0,0,0.9)] m-4">
                 <img class="w-full h-auto" src="img/produto-bandana-pet.jpg" alt="produto-bandana">
-                <h1 class="text-center text-xl mt-2">Bandana FashionPet</h1>
+                <h1 class="text-center text-xl mt-2 sm:mt-5 xl:mt-8">Bandana FashionPet</h1>
                 <p><strong>Descrição: </strong>Bandana dupla face com estampas exclusivas e tecido leve.</p>
-                 <p><strong>Diferenciais: </strong>Fácil de colocar, não incomoda o pet e adiciona charme instantâneo.</p>
-                  <p><strong>Coleção: </strong>“Street Paw” — inspirada em tendências humanas adaptadas para pets.</p>
+                <p><strong>Diferenciais: </strong>Fácil de colocar, não incomoda o pet e adiciona charme instantâneo.
+                </p>
+                <p><strong>Coleção: </strong>“Street Paw” — inspirada em tendências humanas adaptadas para pets.</p>
             </div>
-            <div class="p-4 bg-black text-white mb-2">
+            <div
+                class="p-4 bg-black border-5 border-yellow-400 rounded-xl text-white shadow-[0_10px_30px_rgba(0,0,0,0.9)] m-4">
                 <img class="w-full h-auto" src="img/produto-cama-pet.jpg" alt="produto-cama">
                 <h1 class="text-center text-xl mt-2">Caminha Lux Pet</h1>
                 <p><strong>Descrição: </strong>Caminha acolchoada com design moderno e tecido premium antialérgico.</p>
-                 <p><strong>Diferenciais: </strong>Base antiderrapante, capa removível e lavável, disponível em tons neutros e sofisticados.</p>
-                  <p><strong>Ideal para: </strong>Pets que amam conforto e donos que valorizam estética.</p>
+                <p><strong>Diferenciais: </strong>Base antiderrapante, capa removível e lavável, disponível em tons
+                    neutros e sofisticados.</p>
+                <p><strong>Ideal para: </strong>Pets que amam conforto e donos que valorizam estética.</p>
+            </div>
+            <div
+                class="p-4 bg-black border-5 border-yellow-400 rounded-xl text-white shadow-[0_10px_30px_rgba(0,0,0,0.9)] m-4">
+                <img class="w-full h-auto" src="img/produto-chicball.webp" alt="produto-chicball">
+                <h1 class="text-center text-xl mt-2">Brinquedo ChicBall</h1>
+                <p><strong>Descrição: </strong>Bola estilizada em silicone resistente com textura massageadora.</p>
+                <p><strong>Diferenciais: </strong>Promove diversão e bem-estar, estimula o exercício e combina com
+                    qualquer ambiente.</p>
+                <p><strong>Cores: </strong>Dourado, rosé e preto fosco.</p>
+            </div>
+            <div
+                class="p-4 bg-black border-5 border-yellow-400 rounded-xl text-white shadow-[0_10px_30px_rgba(0,0,0,0.9)] m-4">
+                <img class="w-full h-auto" src="img/produto-coleira-pet.jpg" alt="produto-coleira">
+                <h1 class="text-center text-xl mt-2 sm:mt-10 lg:mt-8 xl:mt-12">Coleira GlamLeather</h1>
+                <p><strong>Descrição: </strong>Coleira em couro ecológico com detalhes metálicos e pingente
+                    personalizado.</p>
+                <p><strong>Diferenciais: </strong>Ajustável, confortável e com fecho de segurança reforçado.</p>
+                <p><strong>Estilo: </strong>Elegância urbana para passeios com personalidade.</p>
             </div>
         </div>
     </section>
-    0
+
+    <section id="depoimentos" class="text-center w-full h-100 md:h-150 ">
+        <h1 class="mt-6 text-4xl">Depoimentos</h1>
+
+        <!--carousel-->
+        <div class="relative w-full overflow-hidden mt-3 shadow-[0_10px_30px_rgba(0,0,0,0.9)]">
+            <div id="carousel" class="flex transition-transform duration-500">
+                <img src="img/depoimento-3.png" class="w-full h-auto flex-shrink-0" alt="depoimento-3">
+
+                <img src="img/depoimento-1.png" class="w-full h-auto flex-shrink-0" alt="depoimento-1">
+                <img src="img/depoimento-2.png" class="w-full h-auto flex-shrink-0" alt="depoimento-2">
+                <img src="img/depoimento-3.png" class="w-full h-auto flex-shrink-0" alt="depoimento-3">
+
+                <img src="img/depoimento-1.png" class="w-full h-auto flex-shrink-0" alt="depoimento-1">
+            </div>
+
+            <button id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded">
+                < </button>
+                    <button id="next"
+                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded"> >
+                    </button>
+        </div>
+    </section>
+
+    <section id="contatos" class="text-center">
+        <h1 class="text-4xl">Contatos</h1>
+
+        <form action="/enviar" method="post" class="bg-black border-5 border-yellow-400 rounded-xl m-4">
+            
+        
+                    <div class="grid grid-cols-1">
+                        <label for="nome" class="text-white mt-2">Diga seu nome:</label>
+                        <input type="text" id="nome" name="nome" class="bg-white border-5 border-yellow-400 rounded-xl m-2"
+                            required>
+
+                        <label for="email" class="text-white">Diga seu email:</label>
+                        <input type="email" id="email" name="email" class="bg-white border-5 border-yellow-400 rounded-xl m-2"
+                            required>
+
+                        <label for="mensagem" class="text-white">Digite sua mensagem:</label>
+                        <textarea maxlength="200" id="mensagem" name="mensagem"
+                            class="bg-white border-5 border-yellow-400 rounded-xl m-2" required></textarea>
+                        <button type="submit" class="bg-yellow-400 text-black m-5 w-25 h-10">Enviar</button>
+                    </div>
+        </form>
+
+    </section>
+
 
     <script src="script.js"></script>
 </body>
